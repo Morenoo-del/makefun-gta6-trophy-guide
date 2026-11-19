@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI (PS5)</title>
+<meta name="description" content="The best offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: checklist, cited guides, platinum roadmap and missable warnings. Works with the network off.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div>
+      <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; Offline guide &amp; tracker</p>
+      <h1>Leonida Trophy Guide</h1>
+      <p class="tagline">All 55 trophies, every guide cited, one road to the Platinum.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>Trophies</dt><dd>55</dd></div>
+      <div><dt>Platinum</dt><dd>Vice Got a Price!</dd></div>
+      <div><dt>Hidden</dt><dd>28</dd></div>
+      <div><dt>Time</dt><dd>~200 hours</dd></div>
+      <div><dt>Difficulty</dt><dd>4/10</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main>
+  <section class="progress" aria-label="Your progress">
+    <div class="progress-text">
+      <strong id="progress-count">0 / 55 earned</strong>
+      <span id="progress-detail">0 platinum &middot; 0 gold &middot; 0 silver &middot; 0 bronze</span>
+    </div>
+    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progress-bar-wrap">
+      <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+    </div>
+  </section>
+
+  <nav class="views" aria-label="Views">
+    <button id="tab-tracker" class="view-tab active" type="button">Tracker</button>
+    <button id="tab-roadmap" class="view-tab" type="button">Platinum roadmap</button>
+  </nav>
+
+  <section id="view-tracker" class="view">
+    <div class="controls">
+      <label class="search-box">
+        <span class="visually-hidden">Search trophies</span>
+        <input id="search" type="search" placeholder="Search name, description or guide…" autocomplete="off">
+      </label>
+      <div class="chip-row" id="kind-filters" role="group" aria-label="Filter by kind">
+        <button class="chip active" data-kind="all" type="button">All</button>
+        <button class="chip" data-kind="story" type="button">Story</button>
+        <button class="chip" data-kind="missable" type="button">Missable</button>
+        <button class="chip" data-kind="collectible" type="button">Collectibles</button>
+        <button class="chip" data-kind="activity" type="button">Activities</button>
+        <button class="chip" data-kind="robbery" type="button">Robbery</button>
+        <button class="chip" data-kind="exploration" type="button">Exploration</button>
+        <button class="chip" data-kind="misc" type="button">Misc</button>
+      </div>
+      <div class="control-row">
+        <label>Grade
+          <select id="grade-filter">
+            <option value="all">All grades</option>
+            <option value="platinum">Platinum</option>
+            <option value="gold">Gold</option>
+            <option value="silver">Silver</option>
+            <option value="bronze">Bronze</option>
+          </select>
+        </label>
+        <label>Show
+          <select id="earned-filter">
+            <option value="all">All trophies</option>
+            <option value="earned">Earned only</option>
+            <option value="unearned">Not earned yet</option>
+          </select>
+        </label>
+        <label class="spoiler-toggle">
+          <input id="spoiler" type="checkbox">
+          <span>Hide story spoilers until earned</span>
+        </label>
+      </div>
+      <div class="control-row actions">
+        <button id="export-btn" type="button">Export progress (.json)</button>
+        <button id="import-btn" type="button">Import progress</button>
+        <input id="import-file" type="file" accept="application/json,.json" class="visually-hidden">
+        <button id="reset-btn" type="button" class="danger">Reset progress</button>
+        <span class="save-note" id="save-note">Progress saves in this browser automatically.</span>
+      </div>
+    </div>
+
+    <div class="tracker-grid">
+      <div class="list-col">
+        <p class="list-meta" id="list-meta">Showing 55 of 55 trophies</p>
+        <ul class="trophy-list" id="trophy-list"></ul>
+      </div>
+      <aside class="guide-col" id="guide-panel" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section id="view-roadmap" class="view" hidden>
+    <p class="intro">The road to <strong>Vice Got a Price!</strong>, in order. Work the stages top to bottom; the checklist items in stage 6 are the long grind, so start their counters early (scan vehicles, study animals, collect cards) while you play the story.</p>
+    <div class="missable-box" id="missable-box"></div>
+    <ol class="roadmap" id="roadmap-list"></ol>
+  </section>
+
+  <footer>
+    <p>Trophy names and descriptions are shown as PlayStation publishes them. Guides are written in our own words; each guide names its sources, and anything not yet confirmed by a guide is marked unconfirmed. Guide data checked 19 November 2026, launch day.</p>
+    <p>Sources consulted: <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx</a> &middot; <a href="https://outputlag.com/guides/gta-6-trophy-list/">Output Lag</a> &middot; <a href="https://gta-zone.com/news/gta-6-trophies-achievements/">GTA Zone</a> &middot; <a href="https://www.thegamershub.co/gta-6/checklist/">The Gamers Hub</a> &middot; <a href="https://cryptogames.gg/gta-6-100-completion-checklist/">CryptoGames</a> &middot; <a href="https://www.planetgta6.com/en/gta-6-trophies/">Planet GTA 6</a> &middot; Exophase &amp; PSNProfiles trophy lists. Unofficial fan guide — not affiliated with Rockstar Games.</p>
+  </footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
